@@ -1,52 +1,92 @@
-<!DOCTYPE html>
 <html>
-    <head>
+   <head>
+        <link href='http://fonts.googleapis.com/css?family=Patua+One|Press+Start+2P' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/timer.css">
         <link rel="stylesheet" href="$views/css/image.css">
         <link rel="stylesheet" href="$views/css/list.css">
         <link rel="stylesheet" href="$views/css/buttons.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/github.css">
-    </head>
-    <body>
-        <div id="wrapper">
-            <div id="index" class="section">
-                <h1>Spotify Apps API Tutorials</h1>
-                <h2>Getting started</h2>
-                <ul>
-                    <li><a href="spotify:app:api-tutorial:getting-started:manifest">Creating your manifest file</a></li>
-                    <li><a href="spotify:app:api-tutorial:getting-started:arguments">Handling arguments, creating pages and navigational tabs</a></li>
-                    <li><a href="spotify:app:api-tutorial:getting-started:drag-drop">Dragging and dropping content into an app</a></li>
-                </ul>
+   </head>
+   <body>
+      <h1 class='lead'>– Tabata Timer –</h1>
 
-                <h2>Playing music</h2>
-                <ul>
-                    <li><a href="spotify:app:api-tutorial:playing:play-track">Play a single track</a></li>
-                    <li><a href="spotify:app:api-tutorial:playing:play-list-tracks">Play a list of tracks</a></li>
-                    <li><a href="spotify:app:api-tutorial:playing:current-track">Get the currently playing track</a></li>
-                    <li><a href="spotify:app:api-tutorial:playing:click-to-play">Create a play/pause button with an HTML element</a></li>
-                    <li><a href="spotify:app:api-tutorial:playing:skip-track">Skip to the next or previous track</a></li>
-                </ul>
+         <div class="timer-notification-area">
+            <div class='timer-wrapper'>
+               <div class="timer-display">00:00.00</div>
 
-                <h2>Searching</h2>
-                <ul>
-                    <li><a href="spotify:app:api-tutorial:search:metadata">Get metadata from an artist, album, track, or playlist</a></li>
-                    <li><a href="spotify:app:api-tutorial:search:search">Return metadata with a given search query</a></li>
-                </ul>
+               <div class="timer-float-info" id="rtype">
+                     <div class="timer-info timer-display-like">
+                        <div class="info-text-smaller round-type">Work</div>
+                     </div>
+               </div>
 
-                <h2>Interacting with user data</h2>
-                <ul>
-                    <li><a href="spotify:app:api-tutorial:user:toplist">Get a user's top tracks</a></li>
-                    <li><a href="spotify:app:api-tutorial:user:star-track">Star and unstar a track</a></li>
-                </ul>
-
-                <h2>Facebook</h2>
-                <ul>
-                    <li><a href="spotify:app:api-tutorial:facebook:authenticate">Authenticate a user with Facebook</a></li>
-                </ul>
-
+               <div class="timer-float-info" id="rnumber">
+                  <div class="timer-info">
+                     <div class="info-text round-number">-</div>
+                  </div>
+               </div>
             </div>
-        </div>
-        <script src="/js/rainbow-custom.min.js"></script>
-        <script src="/js/tutorial.js"></script>
-    </body>
+
+         <div class="controls playlist-controls">
+            <h1>Choose your music</h1>
+            <p class='playlist-title'>Drag and drop a playlist to get started.</p>
+            <div class="html-snippet" data-container="html">
+               <div id="drop-box">
+                  
+               </div>
+            </div>
+         </div>
+
+         <div class="controls timer-controls">
+            <h1>Set Rounds, Rest, Work</h1>
+            <div class="timer-control-set">
+               <span class="timer-control-label">Rounds: </span>
+               <input class="timer-control-input input-rounds" value="8"></input>
+            </div>
+            <div class="timer-control-set">
+               <span class="timer-control-label">Rest: </span>
+               <input class="timer-control-input input-rest" value="10"></input>
+            </div>
+            <div class="timer-control-set">
+               <span class="timer-control-label">Work: </span>
+               <input class="timer-control-input input-work" value="20"></input>
+            </div>
+            <div class="timer-control-set">
+               <input type="button" class="timer-action timer-start" value="Start"/>
+            </div>
+         </div>
+
+      </div> <!-- timer-notification -->
+
+<!--          <div class="timer-footer">
+            Tabata Timer
+            <div class="timer-explanation">
+               <div class="timer-explanation-entry"><span style="font-weight:bold">Keyboard:</span></div>
+               <div class="timer-explanation-entry">
+                  <span style="font-weight:bold">
+                     <span class="keyboard-button">Space</span>
+                     /
+                     <span class="keyboard-button">Return</span>/
+                     <span class="keyboard-button">s</span>
+                  </span> - Start/Stop timer</div>
+               <div class="timer-explanation-entry">
+                  <span style="font-weight:bold">
+                     <span class="keyboard-button">r</span>
+                  </span> - Start timer
+               </div>
+               <div class="timer-explanation-entry">
+                  <span style="font-weight:bold">
+                     <span class="keyboard-button">p</span>
+                  </span> - Stop timer
+               </div>
+            </div>
+         </div> -->
+
+      <div class="overlay-container" style="display: none;">      
+         <div class="timer-info global-notification">
+            Work!
+         </div>
+      </div>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+      <script src="/js/timer.js"></script>
+   </body>
 </html>

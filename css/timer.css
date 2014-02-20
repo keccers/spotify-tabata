@@ -1,0 +1,187 @@
+/*
+creme | #f2eae7 | ||
+dark green | #1e2e17 |  ||
+purple | #ad0082 | ||
+hulk smash green | #2ba706 | ||
+gray | #464f47 |  ||
+http://colrd.com/image-dna/34386/
+      
+*/
+
+body{
+   font-family: 'Lucida Grande', sans-serif;
+   background: #f2eae7;
+   margin: 0;
+}
+
+h1, h2 {
+   font-family: 'Patua One', sans-serif, cursive;
+   font-weight: normal;
+}
+
+.lead {
+   background: #464f47;
+   border-bottom: 3px solid #2ba706;
+   color: #ffffff;
+   font-weight: normal;
+   text-align: center;
+   width: 100%;
+}
+
+
+.timer-footer{
+   clear: both;
+   color: #2ba706;
+   font-size: 0.8em;
+   text-align: center;
+   width: 100%;
+}
+
+.timer-control-set{
+   padding: 1%;
+   margin: 1%;
+}
+
+
+.timer-wrapper {
+   background-color: #ffffff;
+   display: block;
+   margin: 4em 0;
+   padding: 3% 1%;
+}
+
+.timer-display{
+   color: #464f47;
+   font-family: 'Press Start 2P', cursive;
+   font-size: 8em;
+   text-align: center;
+}
+
+/*.timer-notification-area{
+   float: left;
+}*/
+
+#rtype {
+   background: #464f47;
+   display: inline-block;
+   margin: 0 0 0 5.75em;
+   width: 10em;
+}
+
+#rnumber {
+   display: inline-block;
+   background: #464f47;
+   width: 6em;
+}
+
+.timer-info{
+   border-radius: 5px;
+   color: #ffffff;
+   font-size: 3.7em;
+   font-weight: normal;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+
+.controls {
+   float: left;
+   margin: 0 0 5% 5%;
+}
+
+.playlist-controls {
+   clear: left;
+   height: 15em;
+   width: 50%;
+}
+
+.playlist-controls h2 {
+   color: #ad0082;
+}
+
+.timer-controls {
+   width: 30%;
+}
+
+#drop-box {
+   border: 3px solid #000;
+   height: 17.5em;
+}
+
+
+.timer-control-label{
+   font-family: 'Patua One', sans-serif, cursive;
+   font-size: 1.7em;
+   color: #1e2e17;
+   display: block;
+}
+
+.timer-control-input{
+   border: 1px solid #2ba706;
+   color: #2ba706;
+   font-size: 1.7em;
+   width: 100%;
+}
+
+
+.timer-action{
+   background: #464f47;
+   color: #f2eae7;
+   border-radius: 5px;
+   font-family: 'Patua One', sans-serif, cursive;
+   font-size: 2.7em;
+   width: 100%;
+/*   padding: 10px;*/
+}
+
+.timer-action:hover{
+   background: #2ba706;
+/*   color: #464f47;*/
+}
+
+.timer-float-info{
+   font-family: 'Patua One', sans-serif, cursive;
+}
+
+.overlay-container{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   text-align: center;
+}
+.overlay-container .timer-info{
+   color: #E8F1DA;
+   font-size: 7em;
+   text-shadow: 0px 0px 4px #373034;
+}
+
+.info-text-title{
+   font-size: 0.5em;
+}
+
+.info-text{
+   font-size: 0.7em;
+}
+
+.state-error-mark{
+   border: solid 1px #111;
+}
+
+.info-text-smaller{
+   font-size: 0.7em;
+}
+
+.timer-explanation{
+   font-size: 1em;
+}
+.timer-explanation-entry{
+}
+
+.keyboard-button{
+   border: solid 1px #E8F1DA;
+   display: inline-block;
+}
+
+
